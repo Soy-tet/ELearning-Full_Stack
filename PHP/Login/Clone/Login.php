@@ -18,7 +18,12 @@ if(	isset($_POST["username"])&&
         if($chackU == true){
             $message = ("U are login sucessfully, Now you can click login again to directly in Dashboard!");
             $_SESSION['username'] = $username;
-            // header('location: '.$_GET['ref']);
+			$chackRef = $_GET['ref'];
+			if(!isset($chackRef)){
+				header('location: \PORTAL\ELearning-Full_Stack\index.php');
+			}else{
+				header('location: '.$_GET['ref']);
+			}
         }
         else{
             $message = ("Username or password was wrong");
@@ -46,7 +51,7 @@ else{
 		</div>
 		<div class="login-content">
 			<form method="post">
-				<h2 class="title">Get Started</h2>
+				<h2 class="title">user identification</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>

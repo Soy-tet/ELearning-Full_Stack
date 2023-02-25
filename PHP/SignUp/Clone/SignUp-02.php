@@ -27,7 +27,7 @@ if( isset($_POST["username"])&&
                   $result = mysqli_query($connection,"INSERT INTO `User_SignUp` (`username`, `age`, `email`, `password`, `time`, `id`) VALUES ('$username', '$age', '$email', '$password', CURRENT_TIME(), NULL);");
                   $message = "<p>succesfully 🌷 </p>";  
 				  $link = "/Dashboard@web/PHP/Login/Clone/Login.php";
-				  header('location: /Dashboard@web/index.php');
+				  header('location: \PORTAL\ELearning-Full_Stack\index.php');
                 } 
         }
         else{
