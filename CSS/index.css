@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0%;
+    background-color: rgb(221, 221, 221);
 }
 /* NAV  */
     .container-nav{
@@ -11,6 +12,7 @@ body{
         justify-content: space-between;
         margin: auto auto;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        z-index: 3;
     }
     .container-nav .container-left{
         display: flex;
@@ -38,3 +40,128 @@ body{
         font-size: larger;
         margin-right: 30px;
     }
+/* container */
+.container{
+    display: flex;
+}
+.container .container_left{
+    width: 20vw;
+    height: 100vh;
+    background-color: beige;
+    z-index: 1;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 0px 16px 0px 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    max-width: 50vw;
+    min-width: 15vw;
+    position: sticky;
+}
+.btn-best{
+    height: 20px;
+    width: 40px;
+    font-size: small;
+    justify-content: center;
+    border-radius: 30px;
+    display: flex;
+    margin: auto 6px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(235,12,200);
+    background: linear-gradient(90deg, rgba(235,12,200,1) 0%, rgba(250,146,0,1) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.99);
+    align-items: center;
+}
+.container .container_left h2 p{
+    display: flex;
+    color: rgb(4, 28, 73);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 0%;
+}
+.container .container_left ul{
+    gap: 5px;
+    display: grid;
+}
+.container .container_left ul li{
+    display: flex;
+    width: 50%;
+    max-width: 90%;
+    justify-content: space-between;
+    border-radius: 5px;
+    /* border: 3px solid rgba(255, 255, 255, 0.99); */
+}
+.container .container_left ul li .container_icon_team{
+    display: flex;
+}
+.container .container_left ul li .container_icon_team img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.container .container_left ul li .container_icon_team .team_des{
+    display: block;
+    width: 10vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    align-items: center;
+}
+.container .container_left ul li .container_icon_team .team_des p{
+    font-size: medium;
+}
+.container .container_left ul li .container_icon_team .team_des .des{
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(13, 70, 43, 0.534);
+}
+.container .container_left ul li p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+}
+.container .container_left ul li h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    /* display: flex; */
+    margin: auto;
+}
+/* CSS */
+.button-37 {
+  background-color: #13aa9d;
+  border: 1px solid #13aa9d;
+  border-radius: 4px;
+  /* box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0; */
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin:auto;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
